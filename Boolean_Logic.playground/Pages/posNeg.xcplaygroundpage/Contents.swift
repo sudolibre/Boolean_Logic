@@ -14,10 +14,10 @@ func posNeg(firstValue: Int, secondValue: Int, negative: Bool) -> Bool {
 }
 
 
-XCTAssert(posNeg(firstValue: 1, secondValue: -1, negative: false)) // → true
-XCTAssert(posNeg(firstValue: -1, secondValue: 1, negative: false)) // → true
 XCTAssert(posNeg(firstValue: -4, secondValue: -5, negative: true)) // → true
-//extra test to capture the false cases
 XCTAssert(!posNeg(firstValue: 4, secondValue: -5, negative: true)) // → false
+XCTAssert(!posNeg(firstValue: 4, secondValue: 5, negative: true)) // → false
+XCTAssert(posNeg(firstValue: 1, secondValue: -1, negative: false)) // → true
 XCTAssert(!posNeg(firstValue: 4, secondValue: 5, negative: false)) // → false
+XCTAssert(!posNeg(firstValue: -5, secondValue: -10, negative: false)) // → false
 

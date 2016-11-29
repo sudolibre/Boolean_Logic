@@ -6,11 +6,11 @@ import XCTest
 //Given two temperatures, return true if one is less than 0 and the other is greater than 100.
 
 func icyHot(firstTemp: Int, secondTemp: Int) -> Bool {
-    let temps = [firstTemp, secondTemp]
+    let allTemps = [firstTemp, secondTemp]
     var someTempIsHot = false
     var someTempIsIcy = false
     
-    for temp in temps {
+    for temp in allTemps {
         if temp < 0 {
             someTempIsIcy = true
         } else if temp > 100 {

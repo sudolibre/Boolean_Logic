@@ -17,5 +17,5 @@ func hasTeen(first: Int, second: Int, third: Int) -> Bool {
 XCTAssert(hasTeen(first: 13, second: 20, third: 10)) // → true
 XCTAssert(hasTeen(first: 20, second: 19, third: 10)) // → true
 XCTAssert(hasTeen(first: 20, second: 10, third: 13)) // → true
-XCTAssert(!hasTeen(first: 20, second: 25, third: 35))
+XCTAssert(!hasTeen(first: 20, second: 25, third: 35)) // false
 

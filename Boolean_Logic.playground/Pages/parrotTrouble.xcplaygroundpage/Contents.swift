@@ -16,6 +16,8 @@ func parrotTrouble(isTalking: Bool, hour: Int) -> Bool? {
 
 XCTAssert(parrotTrouble(isTalking: true, hour: 6)!) // → true
 XCTAssert(!parrotTrouble(isTalking: true, hour: 7)!) // → false
+XCTAssert(!parrotTrouble(isTalking: true, hour: 15)!) // → false
 XCTAssert(!parrotTrouble(isTalking: false, hour: 6)!) // → false
-XCTAssertNil(parrotTrouble(isTalking: true, hour: 75))
+XCTAssert(!parrotTrouble(isTalking: false, hour: 15)!) // → false
+XCTAssertNil(parrotTrouble(isTalking: true, hour: 75)) // nil
 
